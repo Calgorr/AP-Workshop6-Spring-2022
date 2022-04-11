@@ -3,7 +3,7 @@ abstract public class Animal {
     private String name;
     private int age;
 
-    public void show() {
+    protected void show() {
         System.out.print("Name : " + name + ",age : " + age + ", ");
     }
 

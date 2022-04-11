@@ -2,13 +2,14 @@
 abstract public class Bird extends Animal {
     private int flightAltitude;
 
-    public void show() {
+    protected void show() {
         super.show();
-        System.out.println("Flight altitude : " + flightAltitude + ", ");
+        System.out.print("Flight altitude : " + flightAltitude + ", ");
     }
 
     protected Bird(String name, int age, int flightAltitude) {
-        super(name,age);
+        super(name, age);
+        this.flightAltitude = flightAltitude;
     }
 
     protected int getFlightAltitude() {

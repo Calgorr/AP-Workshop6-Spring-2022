@@ -11,4 +11,8 @@ public class Giraffe extends Mammal implements Prey {
         super.show();
         System.out.println("\"" + specificFeature + "\"");
     }
+
+    public String getName() {
+        return super.getName();
+    }
 }

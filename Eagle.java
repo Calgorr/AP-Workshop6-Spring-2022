@@ -12,8 +12,8 @@ public class Eagle extends Bird implements Hunter {
         System.out.println("\"" + specificFeature + "\"");
     }
 
-    public void hunter(Prey prey) {
-        System.out.println("Eagle hunted "+prey);
+    public void hunt(Prey prey) {
+        System.out.println("Eagle hunted " + prey.getName());
     }
 
 

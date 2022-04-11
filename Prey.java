@@ -1,4 +1,4 @@
 
 public interface Prey {
-    public String getName();
+    String getName();
 }

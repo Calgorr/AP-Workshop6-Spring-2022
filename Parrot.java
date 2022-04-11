@@ -11,4 +11,8 @@ public class Parrot extends Bird implements Prey {
         super.show();
         System.out.println("\"" + specificFeature + "\"");
     }
+
+    public String getName() {
+        return super.getName();
+    }
 }

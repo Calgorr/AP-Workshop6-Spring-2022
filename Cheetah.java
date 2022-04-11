@@ -11,4 +11,8 @@ public class Cheetah extends Mammal implements Hunter {
         super.show();
         System.out.println("\"" + specificFeature + "\"");
     }
+
+    public void hunt(Prey prey) {
+        System.out.println("Cheetah hunted " + prey.getName());
+    }
 }

@@ -2,9 +2,9 @@
 abstract public class Mammal extends Animal {
     private int speed;
 
-    public void show() {
+    protected void show() {
         super.show();
-        System.out.println("speed : " + speed + ", ");
+        System.out.print("speed : " + speed + ", ");
     }
 
     protected Mammal(String name, int age, int speed) {
