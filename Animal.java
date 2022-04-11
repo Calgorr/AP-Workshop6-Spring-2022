@@ -3,19 +3,28 @@ abstract public class Animal {
     private String name;
     private int age;
 
-    public String getName() {
+    public void show() {
+        System.out.print("Name : " + name + ",age : " + age + ", ");
+    }
+
+    protected Animal(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
+
+    protected String getName() {
         return name;
     }
 
-    public void setName(String name) {
+    protected void setName(String name) {
         this.name = name;
     }
 
-    public int getAge() {
+    protected int getAge() {
         return age;
     }
 
-    public void setAge(int age) {
+    protected void setAge(int age) {
         this.age = age;
     }
 }
